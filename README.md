@@ -10,3 +10,7 @@
     - php artisan migrate:rollback 回滚到上一次执行
 - 创建用户表对应的类
     - php artisan make:model User
+- 清除session中参数的三个方法
+    - $username = session()->pull('username');
+    - session()->forget('username');
+    - session()->put('username',null);

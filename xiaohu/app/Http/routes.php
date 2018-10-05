@@ -25,3 +25,10 @@ Route::any('api/user',function(){
 Route::any('api/login',function(){
     return user_ins()->login();
 });
+Route::any('api/logout',function(){
+    return user_ins()->logout();
+});
+Route::any('test',function(){
+    dd(user_ins()->is_logged_in());
+});
+

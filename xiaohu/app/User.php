@@ -65,12 +65,11 @@ class User extends Model
         session()->put('username',$username);
         session()->put('user_id',$user->id);
 
-        dd(session()->all());
-
         return ['status'=>1,'id'=>$user->id];
 
     }
 
+    /*判断用户名密码是否在参数中存在*/
     public function has_username_and_password(){
         $username = Request::get('username');
         $password = Request::get('password');
@@ -81,5 +80,20 @@ class User extends Model
         else {
             return false;
         }
+    }
+
+    /*登出api*/
+    public function logout(){
+        /*删除username*/
+        session()->forget('username');
+        session()->forget('user_id');
+//        return redirect('/');
+        return ['status'=>1];
+    }
+
+    /*检测用户是否登录*/
+    public function is_logged_in(){
+        /*如果session中存在user_id就返回user_id,否则返回false*/
+        return session('user_id')?session('user_id'):false;
     }
 }
