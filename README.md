@@ -9,6 +9,7 @@
     - php artisan migrate 执行新创建的方法
     - php artisan migrate:rollback 回滚到上一次执行
 - 创建用户表对应的类
+    - 注意此处User对应数据库中的users表
     - php artisan make:model User
 - 清除session中参数的三个方法
     - $username = session()->pull('username');
