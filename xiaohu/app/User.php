@@ -11,13 +11,15 @@ use Hash;
 // dd(Request::all());
 class User extends Model
 {
+    // 注册api
     public function signup(){
-        $username = Request::get('username');
-        $password = Request::get('password');
         // 检查用户名和密码是否为空
-        if (!($username && $password)) {
+        $has_username_and_password = $this->has_username_and_password();
+        if (!($has_username_and_password)) {
             return ['status'=>0,'msg'=>'用户名和密码都不可为空'];
         }
+        $username = $has_username_and_password[0];
+        $password = $has_username_and_password[1];
         // 检查用户名是否存在
         $user_exists = $this
         ->where('username',$username)
@@ -36,6 +38,48 @@ class User extends Model
         }else {
             return ['status'=>0,'msg'=>'db insert failed'];
         }
+    }
+    // 登录api
+    public function login()
+    {
+        // 检查用户名和密码是否为空
+        $has_username_and_password = $this->has_username_and_password();
+        if (!($has_username_and_password)) {
+            return ['status'=>0,'msg'=>'用户名和密码都不可为空'];
+        }
+        $username = $has_username_and_password[0];
+        $password = $has_username_and_password[1];
 
+//        检查用户是否存在
+        $user = $this->where('username',$username)->first();
+        if(!$user){
+            return ['status'=>0,'msg'=>'用户不存在'];
+        }
+//        检查密码
+        $hashed_password = $user->password;
+        if (!Hash::check($password,$hashed_password)){
+            return ['status'=>0,'msg'=>'密码有误'];
+        }
+
+//        将用户信息写入session
+        session()->put('username',$username);
+        session()->put('user_id',$user->id);
+
+        dd(session()->all());
+
+        return ['status'=>1,'id'=>$user->id];
+
+    }
+
+    public function has_username_and_password(){
+        $username = Request::get('username');
+        $password = Request::get('password');
+        // 检查用户名和密码是否为空
+        if ($username && $password) {
+            return [$username,$password];
+        }
+        else {
+            return false;
+        }
     }
 }

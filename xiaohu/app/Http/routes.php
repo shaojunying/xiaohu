@@ -10,7 +10,9 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
+function user_ins(){
+    return $user = new App\User;
+};
 Route::get('/', function () {
     return view('welcome');
 });
@@ -18,6 +20,8 @@ Route::any('api',function(){
     return ['version' => 0.1];
 });
 Route::any('api/user',function(){
-    $user = new App\User;
-    return $user->signup();
+    return user_ins()->signup();
+});
+Route::any('api/login',function(){
+    return user_ins()->login();
 });
