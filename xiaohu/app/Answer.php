@@ -26,7 +26,7 @@ class Answer extends Model
         $result = $this
             ->where(['question_id' => rq('question_id'), 'user_id' => rq('user_id')])
             ->count();
-        if (!$result) {
+        if ($result) {
             return ['status' => 0, 'msg' => 'duplicate answers'];
         }
 
