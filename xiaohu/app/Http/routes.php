@@ -56,6 +56,9 @@ Route::get('/', function () {
 Route::any('api',function(){
     return ['version' => 0.1];
 });
+Route::any('api/user/read',function(){
+    return user_ins()->read();
+});
 Route::any('api/user',function(){
     return user_ins()->signup();
 });
