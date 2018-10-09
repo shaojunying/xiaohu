@@ -70,8 +70,7 @@ class Answer extends Model
             return ['status' => 1, 'data' => $this->all()];
         }
         /*检查是否指定每页回答数量*/
-        $limit = rq('limit') ?: 15;
-        $skip = (rq('page') ? (rq('page') - 1) : 0) * $limit;
+        list($limit,$skip) = paginate(rq('page'),rq('limit'));
 
         /*获取指定数量的问题*/
         $result = $this
