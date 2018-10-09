@@ -39,6 +39,24 @@ class User extends Model
             return error('db insert failed');
         }
     }
+
+    /*获取用户信息api*/
+    public function read(){
+        if (!rq('id')){
+            return error('required id');
+        }
+
+        $get = ['id','username',"avatar_id_url","intro"];
+        $user = $this->find(rq('id'),$get);
+        $data = $user->toArray();
+        $answer_count = answer_ins()->where('user_id',rq('id'))->count();
+        $question_count = question_ins()->where('user_id',rq('id'))->count();
+//        $answer_count = $user->answer()->count();
+        $data['answer_count']=$answer_count;
+        $data['question_count']=$question_count;
+        return success(["data"=>$data]);
+    }
+
     // 登录api
     public function login()
     {
