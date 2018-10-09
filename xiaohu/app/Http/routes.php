@@ -11,8 +11,25 @@
 |
 */
 
-
-
+/*翻页函数*/
+function paginate($page=1,$limit=16){
+    $limit = $limit?:16;
+    $skip = ($page ? ($page - 1) : 0) * $limit;
+    return [$limit,$skip];
+}
+/*返回错误信息*/
+function error($msg=null){
+    return ['status'=>0,'msg'=>$msg];
+}
+/*返回成功信息*/
+function success($data_to_merge=null){
+    $data = ['status'=>1];
+    if ($data_to_merge){
+        $data = array_merge($data,$data_to_merge);
+    }
+    return $data;
+}
+/*获取url的参数的函数*/
 function rq($key=null, $default=null){
     if (!$key) return Request::all();
     return Request::get($key,$default);
@@ -39,6 +56,9 @@ Route::get('/', function () {
 Route::any('api',function(){
     return ['version' => 0.1];
 });
+Route::any('api/user/read',function(){
+    return user_ins()->read();
+});
 Route::any('api/user',function(){
     return user_ins()->signup();
 });
@@ -47,6 +67,15 @@ Route::any('api/login',function(){
 });
 Route::any('api/logout',function(){
     return user_ins()->logout();
+});
+Route::any('api/user/change_password',function (){
+    return user_ins()->change_password();
+});
+Route::any('api/user/reset_password',function (){
+    return user_ins()->reset_password();
+});
+Route::any('api/user/validate_reset_password',function (){
+    return user_ins()->validate_reset_password();
 });
 Route::any('api/question/add',function(){
     return question_ins()->add();
@@ -72,6 +101,9 @@ Route::any('api/answer/read', function () {
 Route::any('api/answer/remove', function () {
     return answer_ins()->remove();
 });
+Route::any('api/answer/vote',function (){
+    return answer_ins()->vote();
+});
 Route::any('api/comment/add', function () {
     return comment_ins()->add();
 });
@@ -81,6 +113,7 @@ Route::any('api/comment/read', function () {
 Route::any('api/comment/remove', function () {
     return comment_ins()->remove();
 });
+Route::any("api/timeline","CommonController@timeline");
 
 Route::any('test',function(){
     dd(user_ins()->is_logged_in());
