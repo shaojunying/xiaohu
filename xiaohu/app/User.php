@@ -96,4 +96,12 @@ class User extends Model
         /*如果session中存在user_id就返回user_id,否则返回false*/
         return session('user_id')?session('user_id'):false;
     }
+
+
+    public function answer(){
+        return $this
+            ->belongsToMany("App\Answer")
+            ->withPivot("vote")
+            ->withTimestamps();
+    }
 }

@@ -72,6 +72,9 @@ Route::any('api/answer/read', function () {
 Route::any('api/answer/remove', function () {
     return answer_ins()->remove();
 });
+Route::any('api/answer/vote',function (){
+    return answer_ins()->vote();
+});
 Route::any('api/comment/add', function () {
     return comment_ins()->add();
 });
