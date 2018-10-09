@@ -53,6 +53,9 @@ Route::any('api/login',function(){
 Route::any('api/logout',function(){
     return user_ins()->logout();
 });
+Route::any('api/user/change_password',function (){
+    return user_ins()->change_password();
+});
 Route::any('api/question/add',function(){
     return question_ins()->add();
 });

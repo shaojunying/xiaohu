@@ -91,12 +91,34 @@ class User extends Model
         return ['status'=>1];
     }
 
+    /*更改密码api*/
+    public function change_password(){
+        /*检查用户是否登录*/
+        if (!$this->is_logged_in()){
+            return ['status'=>0,'msg'=>'login is required'];
+        }
+        /*检查用户是否输入了旧密码和新密码*/
+        if (!rq('old_password')||!rq('new_password')){
+            return ['status'=>0,'msg'=>'old_password and new_password is required'];
+        }
+
+        /*获取当前用户对象*/
+        $user = $this->find(session('user_id'));
+
+        /*检查用户输入的旧密码是否正确*/
+        if (!Hash::check(rq('old_password'),$user->password)){
+            return ['status'=>0,'msg'=>'invalid old_password'];
+        }
+        $user->password = bcrypt(rq('new_password'));
+        $user->save();
+        return ['status'=>1];
+    }
+
     /*检测用户是否登录*/
     public function is_logged_in(){
         /*如果session中存在user_id就返回user_id,否则返回false*/
         return session('user_id')?session('user_id'):false;
     }
-
 
     public function answer(){
         return $this

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cb06178-c46f-44d4-8340-9f6e6f95c33b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/xiaohu/app/Answer.php" beforeDir="false" afterPath="$PROJECT_DIR$/xiaohu/app/Answer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xiaohu/app/Http/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/xiaohu/app/Http/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xiaohu/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/xiaohu/app/User.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +57,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="md" value="81" />
-          <entry key="php" value="7125" />
+          <entry key="php" value="7572" />
           <entry key="sql" value="6" />
           <entry key="txt" value="127" />
         </counts>
@@ -65,7 +65,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="81" />
-          <entry key="PHP" value="7125" />
+          <entry key="PHP" value="7572" />
           <entry key="PLAIN_TEXT" value="127" />
           <entry key="Scratch" value="6" />
         </counts>
@@ -77,7 +77,7 @@
           <entry key="answers" value="3" />
           <entry key="comments" value="3" />
           <entry key="md" value="1" />
-          <entry key="php" value="23" />
+          <entry key="php" value="24" />
           <entry key="questions" value="7" />
           <entry key="sql" value="6" />
           <entry key="users" value="1" />
@@ -93,7 +93,7 @@
         <counts>
           <entry key="Database Element" value="15" />
           <entry key="Markdown" value="1" />
-          <entry key="PHP" value="23" />
+          <entry key="PHP" value="24" />
           <entry key="Scratch" value="6" />
         </counts>
       </usages-collector>
@@ -118,17 +118,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xiaohu/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+            <state relative-caret-position="95">
+              <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/xiaohu/app/Http/Controllers/CommonController.php">
+        <entry file="file://$PROJECT_DIR$/xiaohu/app/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+            <state relative-caret-position="603">
+              <caret line="112" column="22" selection-start-line="112" selection-start-column="22" selection-end-line="112" selection-end-column="22" />
+              <folding>
+                <element signature="e#23#62#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -169,11 +172,11 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/xiaohu/database/migrations/2018_10_06_033347_create_table_comments.php" />
         <option value="$PROJECT_DIR$/xiaohu/app/Comment.php" />
-        <option value="$PROJECT_DIR$/xiaohu/app/User.php" />
         <option value="$PROJECT_DIR$/xiaohu/database/migrations/2018_10_09_111926_create_table_answer_user.php" />
         <option value="$PROJECT_DIR$/xiaohu/app/Answer.php" />
         <option value="$PROJECT_DIR$/xiaohu/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/xiaohu/app/Http/Controllers/CommonController.php" />
+        <option value="$PROJECT_DIR$/xiaohu/app/User.php" />
       </list>
     </option>
   </component>
@@ -197,10 +200,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="195" />
-    <option name="y" value="255" />
-    <option name="width" value="840" />
-    <option name="height" value="965" />
+    <option name="x" value="460" />
+    <option name="y" value="575" />
+    <option name="width" value="910" />
+    <option name="height" value="775" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -268,9 +271,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="SearchEverywhereHistoryKey" value="User&#9;FILE&#9;file://C:/Users/shao/Documents/codingProject/xiaohu/xiaohu/app/User.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539087142093" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539090046753" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -300,7 +304,7 @@
       <updated>1538706935125</updated>
       <workItem from="1538706937771" duration="12608000" />
       <workItem from="1538789117615" duration="9771000" />
-      <workItem from="1539083705900" duration="3486000" />
+      <workItem from="1539083705900" duration="6086000" />
     </task>
     <task id="LOCAL-00001" summary="implement login api">
       <created>1538743933814</created>
@@ -355,7 +359,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25865000" />
+    <option name="totallyTimeSpent" value="28465000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
@@ -366,10 +370,10 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.15348525" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.15348525" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.44862518" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.44862518" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="3" weight="0.3299566" />
       <window_info anchor="bottom" id="Message" order="4" />
@@ -545,16 +549,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xiaohu/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="98" selection-start-line="98" selection-end-line="98" />
-          <folding>
-            <element signature="e#23#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -572,17 +566,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xiaohu/app/Http/routes.php">
+    <entry file="file://$PROJECT_DIR$/xiaohu/app/Http/Controllers/CommonController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        <state relative-caret-position="323">
+          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xiaohu/app/Http/Controllers/CommonController.php">
+    <entry file="file://$PROJECT_DIR$/xiaohu/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+        <state relative-caret-position="95">
+          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaohu/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="112" column="22" selection-start-line="112" selection-start-column="22" selection-end-line="112" selection-end-column="22" />
+          <folding>
+            <element signature="e#23#62#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
