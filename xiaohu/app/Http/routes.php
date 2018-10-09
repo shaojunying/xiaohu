@@ -17,6 +17,18 @@ function paginate($page=1,$limit=16){
     $skip = ($page ? ($page - 1) : 0) * $limit;
     return [$limit,$skip];
 }
+/*返回错误信息*/
+function error($msg=null){
+    return ['status'=>0,'msg'=>$msg];
+}
+/*返回成功信息*/
+function success($data_to_merge=null){
+    $data = ['status'=>1];
+    if ($data_to_merge){
+        $data = array_merge($data,$data_to_merge);
+    }
+    return $data;
+}
 /*获取url的参数的函数*/
 function rq($key=null, $default=null){
     if (!$key) return Request::all();

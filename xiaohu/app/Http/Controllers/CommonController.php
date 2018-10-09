@@ -30,6 +30,6 @@ class CommonController extends Controller
             return $item->created_at;
         });
         $data = $data->values()->all();
-        return ['status'=>1,'data'=>$data];
+        return success(["data"=>$data]);
     }
 }
