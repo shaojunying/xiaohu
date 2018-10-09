@@ -126,4 +126,85 @@ class User extends Model
             ->withPivot("vote")
             ->withTimestamps();
     }
+
+    /*重设密码api*/
+    /**
+     * @return array
+     */
+    public function reset_password()
+    {
+        /*之前没有发送记录，直接发送验证码*/
+        if ($this->is_robot()){
+            return error("max frequency reached");
+        }
+
+        /*检查是否传入手机号*/
+        if (!rq('phone')){
+            return error('phone is required');
+        }
+        $user = $this->where('phone',rq('phone'))->first();
+        if (!$user){
+            return error('invalid phone number');
+        }
+        $captcha = $this->generate_captcha();
+        $user->phone_captcha = $captcha;
+        if ($user->save())
+        {
+            $this->send_sms();
+            $this->update_robot_time();
+            return success();
+        }
+        return error("insert database false");
+    }
+
+    public function is_robot($time=10){
+        if (!session('last_sms_time')){
+            return false;
+        }
+        $current_time = time();
+        $last_sms_time = session('last_sms_time');
+
+        /*短信接口调用过于频繁*/
+        return $current_time-$last_sms_time < $time;
+    }
+    public function update_robot_time(){
+        /*方便下一次做检查*/
+        session()->put('last_sms_time',time());
+    }
+
+    /*验证输入的短信验证码api*/
+    public function validate_reset_password(){
+
+        if ($this->is_robot(2)){
+            return error("max frequency reached");
+        }
+
+        if (!rq('phone')||!rq('phone_captcha')||!rq('new_password')){
+            return error('phone, new_password and phone_captcha are required');
+        }
+
+        $user = $this->where([
+            'phone'=>rq('phone'),
+            'phone_captcha'=>rq('phone_captcha')
+        ])->first();
+        if (!$user){
+            return error('invalid phone or invalid phone_captcha');
+        }
+        $user->password = bcrypt(rq('new_password'));
+
+        if ($user->save())
+        {
+            $this->update_robot_time();
+            return success();
+        }
+        return error("update database false");
+    }
+    /*发送短信验证码*/
+    public function send_sms(){
+        return true;
+    }
+    /*生成验证码*/
+    public function generate_captcha(){
+        return rand(1000,9999);
+    }
 }

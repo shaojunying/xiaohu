@@ -1253,35 +1253,41 @@ vote</ColNames>
       <DataType>timestamp|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="297" parent="237" name="users_username_unique">
+    <column id="297" parent="237" name="phone_captcha">
+      <Position>10</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="298" parent="237" name="users_username_unique">
       <ColNames>username</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="298" parent="237" name="users_email_unique">
+    <index id="299" parent="237" name="users_email_unique">
       <ColNames>email</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="299" parent="237" name="users_phone_unique">
+    <index id="300" parent="237" name="users_phone_unique">
       <ColNames>phone</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="300" parent="237" name="PRIMARY">
+    <key id="301" parent="237" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="301" parent="237" name="users_username_unique">
+    <key id="302" parent="237" name="users_username_unique">
       <ColNames>username</ColNames>
       <UnderlyingIndexName>users_username_unique</UnderlyingIndexName>
     </key>
-    <key id="302" parent="237" name="users_email_unique">
+    <key id="303" parent="237" name="users_email_unique">
       <ColNames>email</ColNames>
       <UnderlyingIndexName>users_email_unique</UnderlyingIndexName>
     </key>
-    <key id="303" parent="237" name="users_phone_unique">
+    <key id="304" parent="237" name="users_phone_unique">
       <ColNames>phone</ColNames>
       <UnderlyingIndexName>users_phone_unique</UnderlyingIndexName>
     </key>
