@@ -41,3 +41,4 @@
     - $username = session()->pull('username');
     - session()->forget('username');
     - session()->put('username',null);
+- 使用angular的template可以实现只刷新下半部分二不刷新导航栏
