@@ -1,5 +1,8 @@
 # xiaohu
 
+## 待解决的bug
+当chrome保存密码并自动填充的时候,登录按钮不能变色
+
 ## 常规api调用规则
 - 所有api都以`domain.com/api/...`开头
 - api分为两部分,如`domain.com/api/part_1/part_2`

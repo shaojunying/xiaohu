@@ -225,4 +225,9 @@ class User extends Model
     public function generate_captcha(){
         return rand(1000,9999);
     }
+
+    public function exists()
+    {
+        return success(['count'=>$this->where(rq())->count()]);
+    }
 }

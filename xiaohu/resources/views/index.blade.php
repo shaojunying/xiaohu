@@ -14,23 +14,97 @@
     <title>晓乎</title>
 </head>
 <body>
-<div class="navbar">
-    <a href="" ui-sref="home">主页</a>
-    <a href="" ui-sref="login">登录</a>
+<div class="navbar clearfix">
+    <div class="container">
+        <div class="float-left">
+            <div class="navbar-item brand">晓乎</div>
+            <div class="navbar-item">
+                <input type="text">
+            </div>
+        </div>
+        <div class="float-right">
+            <a ui-sref="home" class="navbar-item">首页</a>
+            <a ui-sref="login" class="navbar-item">登录</a>
+            <a ui-sref="signup" class="navbar-item">注册</a>
+        </div>
+    </div>
 </div>
-<div>
+<div class="page">
     <div ui-view></div>
 </div>
+
 </body>
+
 <script type="text/ng-template" id="home.tpl">
-<div>
-    <h1>首页</h1>
+<div class="home container">
+    主页
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi commodi consequuntur, corporis culpa distinctio esse fuga iste perspiciatis saepe. Dolorum eaque enim, exercitationem iste quasi ratione rem sit tempore voluptate.
 </div>
 </script>
+
 <script type="text/ng-template" id="login.tpl">
-    <div>
+    <div ng-controller="LoginController" class="login container card">
         <h1>登录</h1>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid autem, dolores ea enim impedit, laborum laudantium minus nesciunt nulla qui ratione suscipit tenetur veniam! Cumque deleniti dignissimos eos voluptate voluptatum!
+        <form name="login_form" ng-submit="User.login()">
+            <div class="input-group">
+                <label>用户名</label>
+                <input type="text" name="username" required="required" ng-model="User.login_data.username">
+            </div>
+            <div class="input-group">
+                <label>密码</label>
+                <input type="password" name="password" required="required" ng-model="User.login_data.password">
+            </div>
+            <div ng-if="User.login_failed">用户名或密码有误</div>
+            <div class="input-group">
+                <button class="primary" type="submit"
+                ng-disabled="login_form.username.$error.required ||
+                             login_form.password.$error.required">
+                    登录
+                </button>
+            </div>
+        </form>
     </div>
 </script>
+
+<script type="text/ng-template" id="signup.tpl">
+    <div ng-controller="SignupController" class="signup container card">
+        <h1>注册</h1>
+        <form name="signup_form" ng-submit="User.signup()">
+            <div class="input-group">
+                <label>用户名</label>
+                <input name="username"
+                       type="text"
+                       ng-minlength="2"
+                       ng-maxlength="24"
+                       required="required"
+                       ng-model="User.signup_data.username"
+                        ng-model-options="{debounce:500}">
+                <div ng-if="signup_form.username.$touched" class="input-error-set">
+                    <div ng-if="signup_form.username.$error.required">用户名为必填项</div>
+                    <div ng-if="signup_form.username.$error.minlength||
+                                signup_form.username.$error.maxlength">用户名需要在2-24位之间</div>
+                    <div ng-if="User.signup_username_exists">用户名已存在</div>
+                </div>
+            </div>
+            <div class="input-group">
+                <label>密码</label>
+                <input name="password"
+                       type="password"
+                       ng-minlength="6"
+                       ng-maxlength="255"
+                       required="required"
+                       ng-model="User.signup_data.password">
+                <div ng-if="signup_form.password.$touched" class="input-error-set">
+                    <div ng-if="signup_form.password.$error.required">密码为必填项</div>
+                    <div ng-if="signup_form.password.$error.minlength||
+                                signup_form.password.$error.maxlength">密码需要在6-255位之间</div>
+                </div>
+            </div>
+            <button type="submit"
+                    ng-disabled="signup_form.$invalid"
+                    >注册</button>
+        </form>
+    </div>
+</script>
+
 </html>
