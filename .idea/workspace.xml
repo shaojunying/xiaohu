@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cb06178-c46f-44d4-8340-9f6e6f95c33b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xiaohu/app/Http/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/xiaohu/app/Http/routes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xiaohu/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/xiaohu/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xiaohu/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/xiaohu/public/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/xiaohu/public/css/base.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xiaohu/public/js/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/xiaohu/public/js/base.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xiaohu/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/xiaohu/resources/views/index.blade.php" afterDir="false" />
@@ -53,32 +54,35 @@
     <session id="2021990356">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="9" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.28" value="2" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cell" value="9" />
-          <entry key="css" value="816" />
-          <entry key="js" value="1645" />
+          <entry key="css" value="988" />
+          <entry key="js" value="2174" />
           <entry key="md" value="175" />
-          <entry key="php" value="11804" />
+          <entry key="php" value="12551" />
           <entry key="sql" value="6" />
           <entry key="txt" value="127" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="816" />
-          <entry key="JavaScript" value="1649" />
+          <entry key="CSS" value="988" />
+          <entry key="JavaScript" value="2180" />
           <entry key="Markdown" value="175" />
-          <entry key="PHP" value="11800" />
+          <entry key="PHP" value="12545" />
           <entry key="PLAIN_TEXT" value="127" />
           <entry key="Scratch" value="15" />
         </counts>
@@ -93,10 +97,10 @@
           <entry key="js" value="2" />
           <entry key="json" value="2" />
           <entry key="md" value="3" />
-          <entry key="php" value="40" />
-          <entry key="questions" value="7" />
+          <entry key="php" value="42" />
+          <entry key="questions" value="9" />
           <entry key="sql" value="6" />
-          <entry key="users" value="7" />
+          <entry key="users" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.test" />
@@ -108,11 +112,11 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="2" />
-          <entry key="Database Element" value="21" />
+          <entry key="Database Element" value="25" />
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="2" />
           <entry key="Markdown" value="3" />
-          <entry key="PHP" value="40" />
+          <entry key="PHP" value="42" />
           <entry key="Scratch" value="6" />
         </counts>
       </usages-collector>
@@ -120,13 +124,16 @@
       <usages-collector id="statistics.php.composer.command.options" />
     </session>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="xiaohu" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/xiaohu/resources/views/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="56" column="44" lean-forward="true" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="44" />
+            <state relative-caret-position="308">
+              <caret line="33" column="33" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -134,17 +141,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xiaohu/public/css/base.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
+            <state relative-caret-position="646">
+              <caret line="106" column="8" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xiaohu/public/js/base.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="61" column="32" lean-forward="true" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+            <state relative-caret-position="451">
+              <caret line="137" column="43" selection-start-line="137" selection-start-column="43" selection-end-line="137" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xiaohu/app/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="135" column="35" selection-start-line="135" selection-start-column="35" selection-end-line="135" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xiaohu/app/Http/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="470">
+              <caret line="50" column="1" lean-forward="true" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://07649812-3476-413e-8558-ea11eac804fe/schema/xiaohu/table/questions">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -166,6 +200,8 @@
       <find>session</find>
       <find>clear</find>
       <find>exist</find>
+      <find>prim</find>
+      <find>input</find>
     </findStrings>
     <replaceStrings>
       <replace>error(</replace>
@@ -196,12 +232,12 @@
         <option value="$PROJECT_DIR$/xiaohu/app/Comment.php" />
         <option value="$PROJECT_DIR$/xiaohu/app/Question.php" />
         <option value="$PROJECT_DIR$/xiaohu/database/migrations/2018_10_09_133937_add_field_phone_captcha.php" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/xiaohu/public/css/base.css" />
+        <option value="$PROJECT_DIR$/xiaohu/public/js/base.js" />
         <option value="$PROJECT_DIR$/xiaohu/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/xiaohu/app/User.php" />
-        <option value="$PROJECT_DIR$/xiaohu/public/css/base.css" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/xiaohu/resources/views/index.blade.php" />
-        <option value="$PROJECT_DIR$/xiaohu/public/js/base.js" />
       </list>
     </option>
   </component>
@@ -232,75 +268,74 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="870" />
-    <option name="y" value="306" />
+    <option name="y" value="305" />
     <option name="width" value="910" />
     <option name="height" value="775" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Android</id>
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>CorrectnessLintAndroid</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>LintAndroid</id>
+          </State>
+          <State>
+            <id>PerformanceLintAndroid</id>
+          </State>
+          <State>
+            <id>Plugin DevKit</id>
+          </State>
+          <State>
+            <id>Probable bugsCSS</id>
+          </State>
+          <State>
+            <id>Probable bugsJava</id>
+          </State>
+          <State>
+            <id>RELAX NG</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+          <State>
+            <id>XSLT</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Plugin DevKit</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="xiaohu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xiaohu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xiaohu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xiaohu" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xiaohu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xiaohu" type="462c0819:PsiDirectoryNode" />
-              <item name="xiaohu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xiaohu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xiaohu" type="462c0819:PsiDirectoryNode" />
-              <item name="xiaohu" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xiaohu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xiaohu" type="462c0819:PsiDirectoryNode" />
-              <item name="xiaohu" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xiaohu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xiaohu" type="462c0819:PsiDirectoryNode" />
-              <item name="xiaohu" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xiaohu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xiaohu" type="462c0819:PsiDirectoryNode" />
-              <item name="xiaohu" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xiaohu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xiaohu" type="462c0819:PsiDirectoryNode" />
-              <item name="xiaohu" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="SearchEverywhereHistoryKey" value="css&#9;FILE&#9;file://C:/Users/shao/Documents/codingProject/xiaohu/xiaohu/public/css/base.css&#10;User&#9;FILE&#9;file://C:/Users/shao/Documents/codingProject/xiaohu/xiaohu/app/User.php" />
+    <property name="SearchEverywhereHistoryKey" value="rou&#9;FILE&#9;file://C:/Users/shao/Documents/codingProject/xiaohu/xiaohu/app/Http/routes.php&#10;User&#9;FILE&#9;file://C:/Users/shao/Documents/codingProject/xiaohu/xiaohu/app/User.php&#10;js&#9;FILE&#9;file://C:/Users/shao/Documents/codingProject/xiaohu/xiaohu/public/js/base.js&#10;css&#9;FILE&#9;file://C:/Users/shao/Documents/codingProject/xiaohu/xiaohu/public/css/base.css" />
+    <property name="ToolWindowTerminal.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539966219782" />
@@ -309,6 +344,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -343,7 +379,10 @@
       <workItem from="1539148709311" duration="898000" />
       <workItem from="1539224616313" duration="18000" />
       <workItem from="1539952860824" duration="6525000" />
-      <workItem from="1540003066788" duration="13948000" />
+      <workItem from="1540003066788" duration="16019000" />
+      <workItem from="1540030126067" duration="430000" />
+      <workItem from="1540030589476" duration="148000" />
+      <workItem from="1540030773172" duration="4854000" />
     </task>
     <task id="LOCAL-00001" summary="implement login api">
       <created>1538743933814</created>
@@ -398,7 +437,16 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58853000" />
+    <option name="totallyTimeSpent" value="66356000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
@@ -408,11 +456,11 @@
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.16152816" />
+      <window_info id="Favorites" order="4" side_tool="true" weight="0.3297587" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.16152816" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.32080925" />
+      <window_info anchor="bottom" auto_hide="true" id="Terminal" order="1" weight="0.31982633" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.3299566" />
       <window_info anchor="bottom" id="Database Changes" order="3" weight="0.3299566" />
       <window_info anchor="bottom" id="Message" order="4" />
@@ -421,7 +469,38 @@
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="TODO" order="10" weight="0.3299566" />
+      <window_info anchor="bottom" id="Database Console" order="11" weight="0.3299566" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.3297587" />
+      <window_info anchor="right" id="SciView" order="5" weight="0.3297587" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info active="true" id="Favorites" order="4" side_tool="true" visible="true" weight="0.3297587" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.16152816" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" auto_hide="true" id="Terminal" order="1" weight="0.31982633" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.3299566" />
+      <window_info anchor="bottom" id="Database Changes" order="3" weight="0.3299566" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.32909605" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" weight="0.3299566" />
       <window_info anchor="bottom" id="Database Console" order="11" weight="0.3299566" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -433,7 +512,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -491,7 +570,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://07649812-3476-413e-8558-ea11eac804fe/schema/xiaohu/table/questions" />
     <entry file="das://07649812-3476-413e-8558-ea11eac804fe/schema/xiaohu/table/answers" />
     <entry file="das://07649812-3476-413e-8558-ea11eac804fe/schema/xiaohu/table/comments" />
     <entry file="file://$PROJECT_DIR$/xiaohu/database/migrations/2018_10_05_161031_create_table_answers.php">
@@ -561,44 +639,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xiaohu/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaohu/package-lock.json" />
     <entry file="file://$PROJECT_DIR$/xiaohu/database/migrations/2018_10_04_141256_create_table_users.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="21" column="31" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://07649812-3476-413e-8558-ea11eac804fe/schema/xiaohu/table/users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xiaohu/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="67" column="18" lean-forward="true" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xiaohu/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="230" column="25" selection-start-line="230" selection-start-column="25" selection-end-line="230" selection-end-column="25" />
-          <folding>
-            <element signature="e#23#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xiaohu/public/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
         </state>
       </provider>
     </entry>
@@ -612,17 +657,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xiaohu/resources/views/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/xiaohu/public/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="56" column="44" lean-forward="true" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="44" />
+        <state relative-caret-position="646">
+          <caret line="106" column="8" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xiaohu/public/js/base.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="61" column="32" lean-forward="true" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+        <state relative-caret-position="451">
+          <caret line="137" column="43" selection-start-line="137" selection-start-column="43" selection-end-line="137" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaohu/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="50" column="1" lean-forward="true" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaohu/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="135" column="35" selection-start-line="135" selection-start-column="35" selection-end-line="135" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://07649812-3476-413e-8558-ea11eac804fe/schema/xiaohu/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://07649812-3476-413e-8558-ea11eac804fe/schema/xiaohu/table/questions">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaohu/resources/views/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="33" column="33" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="33" />
         </state>
       </provider>
     </entry>

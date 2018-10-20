@@ -18,14 +18,24 @@
     <div class="container">
         <div class="float-left">
             <div class="navbar-item brand">晓乎</div>
-            <div class="navbar-item">
-                <input type="text">
-            </div>
+            <form ng-submit="Question.go_add_question()" ng-controller="QuestionAddController" id="quick-ask">
+                <div class="navbar-item">
+                    <input ng-model="Question.new_question.title" type="text">
+                </div>
+                <div class="navbar-item">
+                    <button type="submit">提问</button>
+                </div>
+            </form>
         </div>
         <div class="float-right">
             <a ui-sref="home" class="navbar-item">首页</a>
-            <a ui-sref="login" class="navbar-item">登录</a>
-            <a ui-sref="signup" class="navbar-item">注册</a>
+            @if(is_logged_in())
+                <a ui-sref="login" class="navbar-item">{{session('username')}}</a>
+                <a href="{{url('/api/logout')}}" class="navbar-item">登出</a>
+            @else
+                <a ui-sref="login" class="navbar-item">登录</a>
+                <a ui-sref="signup" class="navbar-item">注册</a>
+            @endif
         </div>
     </div>
 </div>
@@ -100,10 +110,41 @@
                                 signup_form.password.$error.maxlength">密码需要在6-255位之间</div>
                 </div>
             </div>
-            <button type="submit"
+            <button class="primary" type="submit"
                     ng-disabled="signup_form.$invalid"
                     >注册</button>
         </form>
+    </div>
+</script>
+
+<script type="text/ng-template" id="question.add.tpl">
+    <div ng-controller="QuestionAddController" class="question_add container">
+        <div class="card">
+            <form name="question_add_form" ng-submit="Question.add()">
+                <div class="input-group">
+                    <label>问题标题</label>
+                    <input
+                            ng-minlength="5"
+                            ng-maxlength="255"
+                           name="title"
+                           required
+                           type="text"
+                           ng-model="Question.new_question.title">
+                </div>
+                <div class="input-group">
+                    <label>问题描述</label>
+                    <textarea type="text" ng-model="Question.new_question.desc"></textarea>
+                </div>
+                <div class="input-group">
+                    <button ng-disabled="question_add_form.title.$error.required||
+                    question_add_form.title.$error.minlength ||
+                    question_add_form.title.$error.maxlength"
+                            type="submit"
+                    class="primary">提交</button>
+                </div>
+            </form>
+        </div>
+
     </div>
 </script>
 

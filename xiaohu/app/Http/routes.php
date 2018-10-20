@@ -45,7 +45,10 @@ function answer_ins()
 {
     return new App\Answer;
 }
-
+function is_logged_in(){
+    /*如果session中存在user_id就返回user_id,否则返回false*/
+    return session('user_id')?:false;
+}
 function comment_ins()
 {
     return new App\Comment;
